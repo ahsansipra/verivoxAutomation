@@ -6,7 +6,7 @@ Instructions:
 
 1: Access following URL to get project from GITHub https://github.com/ahsansipra/verivoxAutomation.git
 
-2: Once downloaded, execute 'verivox.bat' file and project test run execution will get started
+2: Once downloaded, execute 'Verivox.bat' file and project test run execution will get started
 or open command prompt and navigate to project root directory
  Type following command and project execution will get started
 
