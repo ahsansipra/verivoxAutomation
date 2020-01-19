@@ -25,6 +25,7 @@ public class WebDriverManager {
 	public WebDriver getDriver() {
 		if (driver == null)
 			driver = createLocalDriver();
+		driver.manage().window().maximize();
 		return driver;
 	}
 
