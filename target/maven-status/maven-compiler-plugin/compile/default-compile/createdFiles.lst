@@ -1,0 +1,6 @@
+com\verivox\utils\DriverType.class
+com\verivox\utils\WebDriverManager.class
+com\verivox\utils\WebDriverManager$1.class
+com\verivox\utils\LoggingDetails.class
+com\verivox\utils\ConfigFileReader.class
+com\verivox\objects\VerivoxTarfiffPage.class
