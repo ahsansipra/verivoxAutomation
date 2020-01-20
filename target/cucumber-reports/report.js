@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Feature.feature");
 formatter.feature({
-  "name": "DSL Result List - verify result list",
+  "name": "Verivox DSL Tariff Offers",
   "description": "",
   "keyword": "Feature",
   "tags": [

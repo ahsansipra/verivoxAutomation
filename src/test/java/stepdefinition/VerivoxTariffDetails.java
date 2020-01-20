@@ -37,8 +37,8 @@ public class VerivoxTariffDetails {
 	}
 
 	@When("^he is on the DSL calculator$")
-	public void he_is_on_the_DSL_calculator() {
-
+	public void he_is_on_the_DSL_calculator() throws InterruptedException {
+		Thread.sleep(2000);
 		VerivoxTarfiffPage.openDSLCalculator(driver).click();
 		LoggingDetails.loginfo("DSL Calculator opened");
 
@@ -95,13 +95,25 @@ public class VerivoxTariffDetails {
 	@When("^clicks on mehr zum Tarif button$")
 	public void clicks_on_mehr_zum_Tarif_button() throws InterruptedException {
 
-		Thread.sleep(3000);
+		int i = 0;
+		
+		while (i<5)
+		{
+			Thread.sleep(3000);
 		tariffDetail = VerivoxTarfiffPage.openSearchedTariffForDetail(driver);
+		if (tariffDetail != null && tariffDetail.isDisplayed()) {
 
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0,-100);",
 				tariffDetail);
 		tariffDetail.click();
-
+		break;
+		} else
+		{
+			i++;
+		}
+		
+		}
+		
 	}
 
 	@Then("^he should be able see the details of the selected Tariff$")

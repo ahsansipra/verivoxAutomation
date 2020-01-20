@@ -25,6 +25,7 @@ public class WebDriverManager {
 	public WebDriver getDriver() {
 		if (driver == null)
 			driver = createLocalDriver();
+		driver.manage().window().maximize();
 		return driver;
 	}
 
@@ -37,12 +38,12 @@ public class WebDriverManager {
 		}
 
 		case CHROME: {
-			System.setProperty("webdriver.chrome.driver", ConfigFileReader.getInstance().getDriverPath());
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 		}
 		case INTERNETEXPLORER:
-			System.setProperty("webdriver.chrome.driver", ConfigFileReader.getInstance().getDriverPath());
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 			break;
 		}

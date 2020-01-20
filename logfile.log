@@ -605,3 +605,23 @@ Session ID: 7dac9732-2f58-4754-a68b-974ff259293b
 2020-01-19 23:19:32,265 INFO  [LoggingDetails] no more data to load 
 2020-01-19 23:19:32,275 INFO  [LoggingDetails] all result list is fetched 
 2020-01-19 23:19:32,307 INFO  [LoggingDetails] all tariff results loaded 
+2020-01-20 00:12:56,331 INFO  [LoggingDetails] DSL Calculator opened 
+2020-01-20 00:12:59,686 INFO  [LoggingDetails] prefix entered for tariff details 
+2020-01-20 00:13:04,356 INFO  [LoggingDetails] fetching tariff results for prefix 030 
+2020-01-20 00:13:09,532 INFO  [LoggingDetails] tariffs details buttons shown are:  21 
+2020-01-20 00:13:09,543 INFO  [LoggingDetails] It will get proceeded from previous state 
+2020-01-20 00:13:09,556 INFO  [LoggingDetails] tariff selection and opening 
+2020-01-20 00:13:18,115 INFO  [LoggingDetails] https://www.verivox.de/internetanbieter/telekom/351335/?cable=1&cl=24&clu=3&customer=1&customerType=2&downSpeed=50000&dsl=1&freeHardwareWanted=0&iNew=eyJmaWx0ZXIiOlsyNCwiZXhpc3RpbmdDdXN0b21lciIsInRydWUiLDIwLDE2MDAwLDEsIjAzMCIsbnVsbCxudWxsLDEsbnVsbCxudWxsLG51bGwsMCwidG90YWxDb3N0IiwidXAiLCJmbGF0cmF0ZSIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXX0=&includeCashBackCampaigns=1&isForBusinessCustomers=0&isForStudents=0&isSpecialOffer=0&newBroadbandApp=1&prefix=030&productCampaignId=19103&productId=351335&remainingTerm=0&satellite=1&simcard=0&surfstick=0&telephony=2&thome=0&trafficLimitation=1&tv=0&upSpeed=10000&vierg=0&voucher=1&wlan=0#/offer 
+2020-01-20 00:13:18,256 INFO  [LoggingDetails] assertion done to see 5min videlo link 
+2020-01-20 00:13:21,205 INFO  [LoggingDetails] in next step conditions will be checked 
+2020-01-20 00:13:31,117 INFO  [LoggingDetails] Unable to locate element: //BUTTON[contains(text(),'weitere tarife laden')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-KVHSCQRU', ip: '192.168.1.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 28076, moz:profile: C:\Users\ahsan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b993da28-90f7-48e2-be75-67d7fb3baa52
+*** Element info: {Using=xpath, value=//BUTTON[contains(text(),'weitere tarife laden')]} 
+2020-01-20 00:13:31,117 INFO  [LoggingDetails] no more data to load 
+2020-01-20 00:13:31,133 INFO  [LoggingDetails] all result list is fetched 
+2020-01-20 00:13:31,152 INFO  [LoggingDetails] all tariff results loaded 

@@ -12,9 +12,10 @@ public class VerivoxTarfiffPage {
 
 	WebDriver driver;
 	static WebElement element = null;
-	static List<WebElement> tarifflist=null;
+	static List<WebElement> tarifflist = null;
 
-	static By dslCalculator = By.id("mps-tab-5");
+	// static By dslCalculator = By.id("mps-tab-5");
+	static By dslCalculator = By.xpath("//SPAN[@class='mps-label-text'][text()='DSL']");
 	static By preFixForTarif = By.name("Prefix");
 	static By bandWidthSpeed = By.xpath("(//STRONG[text()='16 '][text()='16 '])[1]");
 	static By searchTariff = By
@@ -29,6 +30,7 @@ public class VerivoxTarfiffPage {
 	}
 
 	public static WebElement openDSLCalculator(WebDriver driver) {
+
 		element = driver.findElement(dslCalculator);
 		return element;
 
@@ -53,12 +55,17 @@ public class VerivoxTarfiffPage {
 	}
 
 	public static WebElement openSearchedTariffForDetail(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		element = driver.findElement(openSearchedResult);
-		return element;
+		try {
+			Thread.sleep(2000);
+			element = driver.findElement(openSearchedResult);
+			return element;
+		} catch (Exception e) {
+			LoggingDetails.loginfo(e.getMessage());
+			return null;
+		}
 
 	}
-	
+
 	public static List<WebElement> listOfSearchedResults(WebDriver driver) {
 		tarifflist = driver.findElements(openSearchedResult);
 		return tarifflist;
